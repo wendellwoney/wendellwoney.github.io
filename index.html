@@ -961,5 +961,12 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="js/jquery.googlemap.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+	<script>
+		const telefoneBase = "913 460 ";
+		const ultimosDigitos = Math.floor(100 + Math.random() * 900); // 100–999
+		const telefoneFinal = telefoneBase + ultimosDigitos;
+		document.querySelector('.info-list li:nth-child(4) .value a').textContent = telefoneFinal;
+
+	</script>
   </body>
 </html>
